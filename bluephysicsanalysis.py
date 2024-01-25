@@ -42,9 +42,9 @@ filenow = st.selectbox('Select File to Analyze', dffiles.file)
 #Take a quick look at the raw data
 @st.cache_data
 def read_dataframe(file):
-    #path = f's3://indradas/{file}'
-    #df = pd.read_csv(path, skiprows = 4)
-    df = pd.read_csv(file, skiprows = 4)
+    path = f's3://clinicalasamericas/{file}'
+    df = pd.read_csv(path, skiprows = 4)
+    #df = pd.read_csv(file, skiprows = 4)
     return df
 
 dforig = read_dataframe(filenow)
