@@ -1,0 +1,9 @@
+pandas
+plotly
+numpy
+boto3
+fsspec
+s3fs
+pymedphys
+scipy
+smart_open
